@@ -150,7 +150,7 @@ bool ciCheckSignedFileWrapper(const LPWIN_CERTIFICATE win_cert, ULONG sizeOfSecu
     LARGE_INTEGER signingTime = {};
     const int digestSize = 20; // sha1 len, 0x14
     const int digestIdentifier = 0x8004; // sha1
-    const BYTE digestBuffer[] = // digest of notepad++.exe  这个数据从何而来？在PE的资源里，解析asn1可得到。
+    const BYTE digestBuffer[] = // digest of notepad++.exe  这个数据从何而来？在PE文件里，解析asn1可得到。
     {0x83, 0xF6, 0x68, 0x3E, 0x64, 0x9C, 0x70, 0xB9, 0x8D, 0x0B, 
         0x5A, 0x8D, 0xBF, 0x9B, 0xD4, 0x70, 0xE6, 0x05, 0xE6, 0xA7};
 
